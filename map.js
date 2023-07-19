@@ -10,4 +10,7 @@ for ([i,value ]of map){
     console.log(i,'-',value);
 }
 
+console.log(map.size);
+
+
 
