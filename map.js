@@ -24,6 +24,29 @@ let result = values.filter((val)=>(val>5))
 console.log(result);
 
 
+values.filter(function(a){
+    if(a<6){
+        console.log(a);
+    }
+})
+
+let object = [
+    {
+        device:'laptop',
+        model:3590
+    },
+    {
+        device:'mobile',
+        model:'a04e'
+    }
+]
+
+object.forEach(
+    (a)=>{
+        console.log(a.device);
+        console.log(a.model);
+    }
+)
 
 
 
