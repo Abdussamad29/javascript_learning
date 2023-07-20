@@ -48,6 +48,27 @@ object.forEach(
     }
 )
 
+let book_summary = [{
+    name:'atomic habits',year:2013,genre:'finance',
+},
+{
+    name:'wuthering heights',year:1934,genre:'history',
+},
+{
+    name:'alice in wonderland',year:2014,genre:'fantasy',
+},
+    {
+        name:' habits',year:2014,genre:'fantasy',
+    },
+]
+let Result = book_summary.filter( (answer)=>answer.genre==='finance');
+let Answer = book_summary.filter( (answer)=>answer.year>2013)
+let answer = book_summary.filter(function (a){
+    return a.year===2014 && a.genre=='fantasy'
+})
 
+//console.log(Result);
+//console.log(Answer);
+console.log(answer);
 
 
