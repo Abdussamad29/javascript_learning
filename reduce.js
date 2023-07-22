@@ -1,21 +1,16 @@
-let arr = [1,2,3]
+let arr = [1,2,3,4,5,6]
 
-const value = arr.reduce(function (acc,val){
-    console.log(`acc:${acc} val:${val}`);
-    return acc+val
-},0)
+let total = arr.reduce((acc,cur_val)=>(acc+cur_val),0)
+//console.log(total);
 
-console.log(value);
-
-
-let array = [1,2,3,4,5,6]
-
-let result = array.reduce((acc,c_val)=>{
-   console.log('acc=',acc,' c_val= ',c_val);
-    return acc*c_val
-
-},2)
+let result = arr.reduce((acc,val)=>{
+    console.log(`acc=${acc} current value = ${val}`);
+    return acc*val
+},1)
 console.log(result);
 
-let Arr = arr.reduce((acc,cur_val)=>(acc*cur_val),1)
-console.log(Arr);
+
+//chaining 
+
+let map = arr.map((a)=>(a+10)).map((b)=>(b*4)).filter((c)=>(c>55))
+console.log(map);
