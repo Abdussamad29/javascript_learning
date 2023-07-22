@@ -14,3 +14,21 @@ console.log(result);
 
 let map = arr.map((a)=>(a+10)).map((b)=>(b*4)).filter((c)=>(c>55))
 console.log(map);
+
+
+let cart = [{
+        course:"reactjs",
+        price:699
+},
+{
+    course:"react-native",
+        price:499
+
+},
+{
+    course:"python",
+        price:999
+}]
+
+let all_total = cart.reduce((acc,c)=>acc+c.price,0)
+console.log(all_total);
