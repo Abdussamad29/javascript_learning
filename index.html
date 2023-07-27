@@ -23,6 +23,11 @@
         <div class="day">thursday</div>
     </div>
     <div id="hi">hi there</div>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+    </ul>
+    
 
     
     
@@ -42,15 +47,22 @@
 
  
  let p = document.querySelector('.parent')
- console.log(p);
- console.log(p.children);
- console.log(p.children[0].innerHTML);
+ //console.log(p);
+ //console.log(p.children);
+// console.log(p.children[0].innerHTML);
+p.children[1].style.color="green"
 
  
  for(let i=0; i<p.children.length; i++)
 {
-    console.log(p.children[i].innerHTML);
+    //console.log(p.children[i].innerHTML);
 }
+
+let li = document.querySelector('ul')
+li.querySelector('li').style.backgroundColor
+="orange"
+let Li = document.querySelectorAll('li')
+Li[1].style.backgroundColor="red"
   
 
 </script>
