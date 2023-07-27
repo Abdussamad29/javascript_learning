@@ -44,10 +44,13 @@
  let p = document.querySelector('.parent')
  console.log(p);
  console.log(p.children);
- console.log(p.children[1].innerHTML);
+ console.log(p.children[0].innerHTML);
 
  
-
+ for(let i=0; i<p.children.length; i++)
+{
+    console.log(p.children[i].innerHTML);
+}
   
 
 </script>
