@@ -27,19 +27,44 @@
         <div class="relative">child3</div>
     </div>
 
-
-    <script>
-        let id = document.getElementById('owner')
-        console.log(id.getAttribute('id'));
-
-        let q = document.querySelector('#owner')
-        console.log(q.children[0].innerHTML);
-        console.log(q.lastElementChild.innerHTML);
-
-        
+    <ul>
+        <li>one</li>
+        <li>two</li>
+    </ul>
 
 
-    </script>
+   <script>
+    let m = document.querySelectorAll('.child')
+    m.forEach((a)=>{
+        a.style.backgroundColor="yellow";
+        a.style.color="black";
+
+    })
+
+    let q = document.querySelector('#owner')
+    //console.log(q.children[0].innerHTML);
+    //console.log(q.lastElementChild.innerHTML);
+    q.children[1].style.color="red"
+
+    for(let i = 0; i<q.children.length; i++){
+       // console.log(q.children[i].innerHTML);
+    }
+    
+    
+let li = document.querySelector('ul')
+
+//li.querySelector('li').style.backgroundColor="orange"
+li.children[1].style.backgroundColor='green'
+li.children[0].style.backgroundColor='grey'
+
+let kid = document.querySelector('.child')
+console.log(kid.parentElement);
+console.log(kid.nextElementSibling.innerHTML);
+
+let log = document.getElementById('owner')
+console.log( log.getAttribute('id'));
+console.log(log.setAttribute('id','own'));
+   </script>
     
 
     
