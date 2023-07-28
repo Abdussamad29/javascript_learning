@@ -73,7 +73,8 @@ console.log(kid.nextElementSibling.innerHTML);
 let func = document.querySelector('.name')
 //console.log(func.children[0].style.color="green");
 func.querySelector('.relative').style.backgroundColor="blue"
-
+console.log(func.childNodes);
+console.log(func.getAttribute('class'));
 
 let querySelector = document.querySelectorAll('.name')
 
@@ -83,6 +84,20 @@ querySelector.forEach((b)=>{
     b.style.padding='23px'
   
 })
+
+
+let div = document.createElement('div')
+
+div.className="lol"
+div.id = Math.round(Math.random()*10+1)
+div.innerText = 'chai peelo'
+console.log(div.innerText);
+div.style.backgroundColor='orange';
+div.style.color="yellow"
+
+document.body.appendChild(div)
+
+
 
 
    </script>
