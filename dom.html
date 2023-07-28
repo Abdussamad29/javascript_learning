@@ -3,18 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document-Object-Model</title>
-
+    <title>Document</title>
+    <style>
+        .child{
+            text-align: center;
+           font-size: 30px; 
+           margin-top: 40px;
+      
+          
+           
+        }
+    </style>
 </head>
 <body>
+    <div id="owner">
+        <div class="child">one</div>
+        <div class="child">two</div>
+        <div class="child">three</div>
+    </div>
+    <div class="name">
+        <div class="relative">child1</div>
+        <div class="relative">child2</div>
+        <div class="relative">child3</div>
+    </div>
+
+
+    <script>
+        let id = document.getElementById('owner')
+        console.log(id.getAttribute('id'));
+
+        let q = document.querySelector('#owner')
+        console.log(q.children[0].innerHTML);
+        console.log(q.lastElementChild.innerHTML);
+
+
+    </script>
+    
 
     
 </body>
-<script>
-   const div =  document.createElement('div')
- 
-   div.className = "main"
-   div.id = Math.random()*10+2
-   console.log(div);
-</script>
 </html>
